@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            long gir=0;
+            Console.Write("Zamana Çevirilecek Saniyeyi Girin : ");
+            gir = long.Parse(Console.ReadLine());
+
+            long saniye = gir % 60;
+            long dakikaadeti = gir / 60;
+            long dakika = dakikaadeti % 60;
+            long saatadeti = dakikaadeti / 60;
+            long saat = saatadeti % 24;
+            long gunadeti = saatadeti / 24;
+            long gun = gunadeti % 7;
+            long haftaadeti = gunadeti / 7;
+            long hafta = haftaadeti % 52;
+            long sene = hafta/52;
+            long seneadeti = hafta % 52;
+       
+
+            Console.WriteLine("{0} Sene, {1} Hafta , {2} gün,  {3} Saat,  {4} Dakika,  {5} Saniye", sene,hafta,gun,saat,dakika,saniye);
+
+            Console.ReadKey();
+            
+        }
+    }
+}
