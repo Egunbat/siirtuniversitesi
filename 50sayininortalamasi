@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayac = 0;
+            double toplam=0;
+            double ortalama=0;
+            int gir = 0;
+            int adet=0;
+
+            Console.Write("Toplanacak Sayı Adeti Girin : ");
+            gir = Convert.ToInt32(Console.ReadLine());
+
+            for (sayac = 1; sayac <= gir; adet++ )
+            {
+
+                Console.Write(sayac + " Sayıyı gir: ");
+                double sayi = Convert.ToInt32(Console.ReadLine());
+                toplam = toplam + sayi;
+                sayac++;
+            }
+            ortalama = toplam / gir;
+            Console.WriteLine("*************");
+            Console.WriteLine("Girilen {0} sayının toplamı : {1}", adet,toplam);
+            Console.WriteLine("Girilen {0} sayının ortalaması : {1}",adet,ortalama);
+
+            Console.ReadKey();
+            
+        }
+    }
+}
