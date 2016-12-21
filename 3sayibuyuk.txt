@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("1. Sayýyý yazýn : ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("2. Sayýyý yazýn : ");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("3. Sayýyý yazýn : ");
+            int z = Convert.ToInt32(Console.ReadLine());
+            int eb = x;
+            if (eb < y)
+            {
+               eb = y;
+              
+            }
+            if (eb<z)
+            {
+                eb = z;
+            }
+            Console.WriteLine(eb);
+            Console.ReadKey();
+        }
+    }
+}

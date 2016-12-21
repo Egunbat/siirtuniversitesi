@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("1. Sayýyý yazýn : ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("2. Sayýyý yazýn : ");
+            int y = Convert.ToInt32(Console.ReadLine());
+            if (x > y)
+            {
+                Console.WriteLine("Girilen 2 sayýdan en büyüðü : "+x);
+            }
+            else Console.WriteLine("Girilen 2 sayýdan en büyüðü : " + y);
+            Console.ReadKey();
+        }
+    }
+}

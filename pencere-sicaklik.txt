@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Sýcaklýk : ");
+            int sicaklik = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Pencerenin Durumu E/K : ");
+            string pencere = Console.ReadLine();
+
+            if (sicaklik <= 40 && sicaklik>= 30  )
+            {
+                if (pencere == "k")
+                {
+                    Console.WriteLine("Pencereyi Aç");
+                }
+                else Console.WriteLine("Faný Çalýþtýr");
+                
+
+            }
+           
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Notu girin : ");
+            int x = Convert.ToInt32(Console.ReadLine());
+
+            if (x <= 100 && x >= 0)
+            {
+                Console.WriteLine("Geçerli not girdiniz.");
+            }
+            else Console.WriteLine("Geçersiz Not girdiniz.");
+            Console.ReadKey();
+        }
+    }
+}
